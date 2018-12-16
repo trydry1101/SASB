@@ -10,9 +10,9 @@ soup
 DATA highlow;
 INFILE "&Path_conf./drinkdata.txt";
 INPUT name $ 
-/*最初の行はnameで文字列*/
 / energy protein
-/*次の行のデータをNormalHighとNormalLowとし*/
 #3 fat carb;
-/*最初から3番目（3行目）のデータをRecordHigh, RecordRowとする*/
 RUN;
+/*最初の行はnameで文字列*/
+/*次の行のデータを"/"でと指定*/
+/*"#3"で最初から3番目（3行目）のデータを取得する*/
