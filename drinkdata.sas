@@ -7,11 +7,11 @@ soup
 0 8
 */
 %let PATH_CONF=/folders/myfolders/ex_data/MyRawdata;
-DATA highlow;
-INFILE "&Path_conf./drinkdata.txt";
-INPUT name $ 
-/ energy protein
-#3 fat carb;
+DATA drink;
+   INFILE "&Path_conf./drinkdata.txt";
+   INPUT name $ 
+         / energy protein
+         #3 fat carb;
 RUN;
 /*最初の行はnameで文字列*/
 /*次の行のデータを"/"でと指定*/
